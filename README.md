@@ -1,6 +1,6 @@
 # Crypto Currency Converter
 
-![Crypto Currency Converter](https://your-image-url.jpg)
+![Crypto Currency Converter](https://github.com/adityaS011/Crypto-Currency-Convertor/blob/main/frontend/public/ss.png)
 
 A simple and elegant web application for converting cryptocurrencies to different currencies. This project consists of a backend server built with Express.js and a frontend application developed using React and Vite.
 
