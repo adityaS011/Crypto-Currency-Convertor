@@ -43,9 +43,9 @@ function App() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-96">
-        <h1 className="text-2xl font-bold mb-4">Currency Converter</h1>
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500">
+      <div className="bg-gray-200 p-8 rounded shadow-2xl ring-gray-700 w-96">
+        <h1 className="text-2xl font-bold mb-4 text-gray-800">Currency Converter</h1>
         <form className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700">Source Cryptocurrency:</label>
@@ -95,7 +95,7 @@ function App() {
         {error && <p className="text-red-500 mt-4">{error}</p>}
         {convertedAmount !== null && (
           <div className="mt-4">
-            <h2 className="text-xl font-bold">Converted Amount:</h2>
+            <h2 className="text-xl font-bold text-gray-800">Converted Amount:</h2>
             <p className="text-gray-800">{convertedAmount} {targetCurrency.toUpperCase()}</p>
           </div>
         )}
