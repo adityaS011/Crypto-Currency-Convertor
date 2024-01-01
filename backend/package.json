@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",  // Adjust this based on your entry point file
+    "build": "echo 'No build steps required'",  // Add your build steps if necessary
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
