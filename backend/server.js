@@ -7,10 +7,10 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 
-// API endpoint to fetch the top 100 cryptocurrencies and supported currencies
+
 app.get('/cryptocurrencies', async (req, res) => {
   try {
-    // Use Coingecko API for example
+   
     const response = await axios.get('https://api.coingecko.com/api/v3/coins/markets', {
       params: {
         vs_currency: 'usd',
@@ -34,7 +34,7 @@ app.get('/cryptocurrencies', async (req, res) => {
   }
 });
 
-// API endpoint to perform currency conversion
+
 app.post('/convert', async (req, res) => {
   const { sourceCrypto, amount, targetCurrency } = req.body;
 
