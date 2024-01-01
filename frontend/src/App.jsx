@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     // Fetch the list of cryptocurrencies
-    axios.get('http://localhost:3001/cryptocurrencies')
+    axios.get('https://crypto-currency-convertor.onrender.com/cryptocurrencies')
       .then((response) => {
         setCryptocurrencies(response.data);
         setSourceCrypto(response.data[0]?.id || ''); // Ensure a default value is set
@@ -21,7 +21,7 @@ function App() {
       .catch((error) => console.error(error));
 
     // Fetch the list of supported currencies
-    axios.get('http://localhost:3001/currencies')
+    axios.get('https://crypto-currency-convertor.onrender.com/currencies')
       .then((response) => {
         setCurrencies(response.data);
         setTargetCurrency(response.data[0] || 'usd'); // Ensure a default value is set
@@ -38,7 +38,7 @@ function App() {
     setError('');
 
     // Perform currency conversion
-    axios.post('http://localhost:3001/convert', { sourceCrypto, amount, targetCurrency })
+    axios.post('https://crypto-currency-convertor.onrender.com/convert', { sourceCrypto, amount, targetCurrency })
       .then((response) => setConvertedAmount(response.data.convertedAmount))
       .catch((error) => console.error(error));
   };
